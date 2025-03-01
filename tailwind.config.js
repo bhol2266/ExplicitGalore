@@ -54,6 +54,7 @@ module.exports = {
         'SFuiDisplay': ['SF UI Display'],
         'abhayalibre': ['Abhaya Libre'],
         'dancing': ['Dancing Script'],
+        'abril': ['Abril Fatface'],
       },
     },
   },

@@ -170,12 +170,14 @@ function Navbar() {
                 <Disclosure as="nav" >
                     {({ open }) => (
                         <>
-                            <div className='flex  items-center justify-between'>
+                            <div className='relative flex  items-center justify-between'>
 
                                 <div className='flex items-center space-x-1' >
 
-                                    <Link href='/'>
-                                        <img src='/logo.png' alt="logo" className='w-[94px]' />
+                                <Link className="absolute flex items-center" href='/'>
+                                <img src='/logo.png' alt="logo" className='h-[60px] mt-[10px]' />
+                            <span className="text-red-500 font-abril font-semibold text-[25px] ">ExplicitGalore.com</span>
+
                                     </Link>
                                     {location &&
                                         <div className='cursor-pointer' onClick={handleClickFlag}>
@@ -414,10 +416,12 @@ function Navbar() {
                 {/* Navbar */}
                 <div className=' flex items-center justify-between  pt-2 pb-2 text-white '>
 
-                    <div className='flex items-center space-x-1 md:space-x-3  ml-2' >
+                    <div className='relative flex items-center space-x-1 md:space-x-3  ml-2 ' >
 
-                        <Link href='/'>
-                            <img src='/logo.png' alt="logo" className='w-[120px]' />
+                        <Link className="absolute flex items-center" href='/'>
+                            <img src='/logo.png' alt="logo" className='h-[100px] mt-[40px]' />
+                            <span className="text-red-500 font-abril font-semibold text-[25px] ">ExplicitGalore.com</span>
+
                         </Link>
                         {location &&
 
@@ -437,8 +441,8 @@ function Navbar() {
 
 
                         <a target="_blank" href={countryBlocked ? "https://go.xxxiijmp.com/?userId=9ea31ff27db3b7242eabcc2d26ac0eaf38f093c68528e70c2e7f5a72df55c42e" : "https://chaturbate.com/in/?tour=LQps&campaign=3v7pk&track=default&room=ukdevelopers"} rel="noopener noreferrer">
-                            <div className='pl-2  flex  items-center 
-                             cursor-pointer hover:scale-105  transition-all space-x-2 hidden xl:flex'>
+                            <div className='pl-[250px]  flex  items-center 
+                             cursor-pointer hover:scale-105  transition-all space-x-2  xl:flex'>
                                 <img
                                     src='/livesex.png'
                                     height={35}
