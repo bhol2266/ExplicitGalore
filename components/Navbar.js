@@ -441,7 +441,7 @@ function Navbar() {
 
 
                         <a target="_blank" href={countryBlocked ? "https://go.xxxiijmp.com/?userId=9ea31ff27db3b7242eabcc2d26ac0eaf38f093c68528e70c2e7f5a72df55c42e" : "https://chaturbate.com/in/?tour=LQps&campaign=3v7pk&track=default&room=ukdevelopers"} rel="noopener noreferrer">
-                            <div className='pl-[250px]  flex  items-center 
+                            <div className='pl-[300px]  flex  items-center 
                              cursor-pointer hover:scale-105  transition-all space-x-2  xl:flex'>
                                 <img
                                     src='/livesex.png'
