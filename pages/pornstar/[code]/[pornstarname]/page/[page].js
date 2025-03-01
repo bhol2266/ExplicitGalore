@@ -78,13 +78,13 @@ function Index({ video_collection, pages, pornstarInformation, collageImages, po
 
             <Head>
 
-                <title>{`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos ${getcurrentyear()} - CumCraze | ${currentPageNumberURL}`}</title>
+                <title>{`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos ${getcurrentyear()} - ExplicitGalore | ${currentPageNumberURL}`}</title>
 
                 <meta name="description" content={`Find nude ${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} porn videos featuring the porn star fucks in XXX scenes, including amateur, anal, blowjob!`} />
                 <meta name="keywords" content="porn, xxx, streaming porn, HD porn, HD adult videos, HD pussy videos, sex movies, chutlunds" />
-                <meta property="og:title" content={`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos ${getcurrentyear()} - CumCraze`} />
+                <meta property="og:title" content={`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos ${getcurrentyear()} - ExplicitGalore`} />
                 <meta property="og:description" content={`Find nude ${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} porn videos featuring the porn star fucks in XXX scenes, including amateur, anal, blowjob!`} />
-                <meta name="twitter:title" content={`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos ${getcurrentyear()} - CumCraze`} />
+                <meta name="twitter:title" content={`${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} Porn Videos ${getcurrentyear()} - ExplicitGalore`} />
                 <meta name="twitter:description" content={`Find nude ${capitalizeFirstLetter(pornstarname.replace('+', " ").replace("+", " "))} porn videos featuring the porn star fucks in XXX scenes, including amateur, anal, blowjob!`} />
                 <link rel="canonical" href={`https://www.chutlunds.com/pornstar/${code}/${pornstarname}/page/${page}`} />
 

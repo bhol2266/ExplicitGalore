@@ -44,15 +44,15 @@ function Search({ video_collection, pages }) {
   return (
     <>
       <Head>
-        <title>{`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze`}</title>
-        <meta name="description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on CumCraze!`} />
-        <meta property="og:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze | ${currentPageNumberURL}`} />
-        <meta property="og:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on CumCraze!`} />
-        <meta name="twitter:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - CumCraze | ${currentPageNumberURL}`} />
-        <meta name="twitter:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on CumCraze!`} />
+        <title>{`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - ExplicitGalore`}</title>
+        <meta name="description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on ExplicitGalore!`} />
+        <meta property="og:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - ExplicitGalore | ${currentPageNumberURL}`} />
+        <meta property="og:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on ExplicitGalore!`} />
+        <meta name="twitter:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - ExplicitGalore | ${currentPageNumberURL}`} />
+        <meta name="twitter:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on ExplicitGalore!`} />
         G
         {/* Additional meta tags */}
-        <link rel="canonical" href={`https://www.cumcraze.com/search/${searchkey}`} />
+        <link rel="canonical" href={`https://www.ExplicitGalore.com/search/${searchkey}`} />
       </Head>
 
       <Header keyword={searchkey.replace("+", " ")} pageNumber={currentPageNumberURL} />
