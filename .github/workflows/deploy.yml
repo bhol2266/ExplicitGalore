@@ -31,12 +31,12 @@ jobs:
           USERNAME: root
           TARGET_DIR: /home/nextjs/ExplicitGalore
           APP_NAME: ExplicitGalore
-          PORT: 3003
+          PORT: 3004
         run: |
           ssh -o StrictHostKeyChecking=no $USERNAME@$HOST << 'EOF'
             export TARGET_DIR="/home/nextjs/ExplicitGalore"
             export APP_NAME="ExplicitGalore"
-            export PORT="3003"
+            export PORT="3004"
 
             # Load NVM
             export NVM_DIR="$HOME/.nvm"
