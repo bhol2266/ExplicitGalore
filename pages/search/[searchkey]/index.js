@@ -38,22 +38,21 @@ function Search({ video_collection, pages }) {
     );
   }
 
-  function getcurrentyear() {
-    return new Date().getFullYear();
-  }
+
   return (
     <>
-      <Head>
+     <Head>
         <title>{`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - ExplicitGalore`}</title>
-        <meta name="description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on ExplicitGalore!`} />
+        <meta name="description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on ExplicitGalore!`} />
         <meta property="og:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - ExplicitGalore | ${currentPageNumberURL}`} />
-        <meta property="og:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on ExplicitGalore!`} />
+        <meta property="og:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on ExplicitGalore!`} />
         <meta name="twitter:title" content={`${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} Porn Videos - ExplicitGalore | ${currentPageNumberURL}`} />
-        <meta name="twitter:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in ${getcurrentyear()} on ExplicitGalore!`} />
-        G
+        <meta name="twitter:description" content={`Watch ${capitalizeFirstLetter(searchkey.replace('+', " ").replace("+", " "))} porn videos. Explore tons of XXX movies with sex scenes in on ExplicitGalore!`} />
+        
         {/* Additional meta tags */}
         <link rel="canonical" href={`https://www.ExplicitGalore.com/search/${searchkey}`} />
       </Head>
+
 
       <Header keyword={searchkey.replace("+", " ")} pageNumber={currentPageNumberURL} />
       <Videos data={video_collection} />
@@ -80,7 +79,7 @@ export async function getServerSideProps(context) {
   if (searchkey == "bbc") {
 
     const parcelData = { url: `https://spankbang.party/s/${searchkey.toLowerCase().trim()}/?o=all` };
-    const API_URL = `${process.env.BACKEND_URL}getvideos`;
+    const API_URL = `${process.env.BACKEND_URL}getVideos`;
 
     const rawResponse = await fetch(API_URL, {
       headers: {
@@ -92,6 +91,7 @@ export async function getServerSideProps(context) {
     });
 
     const { finalDataArray, pages } = await rawResponse.json();
+
 
     return {
       props: {
