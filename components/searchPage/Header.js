@@ -33,7 +33,15 @@ export default function Header({ keyword, pageNumber, filteredObjsArrayProps }) 
 
 
     useEffect(() => {
-        setcurrentPage(window.location.href.includes('/search/') ? "searchPage" : "categoryPage")
+        const href = window.location.href;
+
+        if (href === window.location.origin + "/" || href.includes("/query")) {
+            setcurrentPage("Homepage");
+        } else if (href.includes('/search/')) {
+            setcurrentPage("searchPage");
+        } else {
+            setcurrentPage("categoryPage");
+        }
     }, [])
 
 
@@ -154,6 +162,8 @@ export default function Header({ keyword, pageNumber, filteredObjsArrayProps }) 
     ]
 
     const clickHandler = (query) => {
+        console.log(currentPage);
+
         setSpinner(true)
         var queryObj = {}
         //if this Header component is of search page or category page
@@ -181,17 +191,24 @@ export default function Header({ keyword, pageNumber, filteredObjsArrayProps }) 
         }
 
 
+
         if (currentPage === 'searchPage') {
             Router.push({
                 pathname: `/search/query/`,
                 query: queryObj
-            })
+            });
+        } else if (currentPage === 'Homepage') {
+            Router.push({
+                pathname: `/query/`,
+                query: queryObj
+            });
         } else {
             Router.push({
                 pathname: `/category/query/`,
                 query: queryObj
-            })
+            });
         }
+
 
 
     }

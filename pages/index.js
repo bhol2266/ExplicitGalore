@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useContext, useEffect, useState } from 'react';
 import ReactCountryFlag from "react-country-flag";
+import Header from "../components/searchPage/Header";
+import Pagination from '../components/Pagination';
 
 import BannerAds from '../components/Ads/BannerAds';
 import Sidebar from '../components/Sidebar';
@@ -197,7 +199,7 @@ export default function Home({ finalDataArray, trendingChannels, tags, trendingP
 
   return (
     <div className=" ">
-    <Head>
+      <Head>
         <title>Watch hot porn videos for free at ExplicitGalore!</title>
         <meta name="description" content="Looking for free porn videos and exclusive XXX movies? Look no further than ExplicitGalore. With instant streaming of over 6 million hardcore sex videos from both professionals and amateurs, our high-quality porn tube has everything you need to satisfy your desires. Whether you're looking for sensual solo scenes or wild group sex, ExplicitGalore has it all. Join us now and start exploring our vast collection of adult content." />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
@@ -235,7 +237,7 @@ export default function Home({ finalDataArray, trendingChannels, tags, trendingP
       <main className="flex-row flex  mt-1 md:mt-2 md:space-x-3">
         {/* <Sidebar /> */}
         <div className='w-full overflow-hidden'>
-          <h1 className="lg:text-2xl text-lg font-semibold text-gray-800 my-3 font-inter basicMargin w-fit border-b-[3px] border-[#FFBB00]">Trending Videos</h1>
+          <Header keyword={"trending"} pageNumber={"1"} />
           <Videos data={finalDataArray} />
 
 
@@ -285,13 +287,14 @@ export default function Home({ finalDataArray, trendingChannels, tags, trendingP
 
 
 
-          {TrendingCreators &&
+          {TrendingCreators.length != 0 &&
             <div className='md:hidden'>
               <Homepage_Title title="Trending Creators" />
               <Creators_slider trendingCreators={TrendingCreators} />
             </div>
           }
 
+          <Pagination data={{ url: `/`, currentPageNumberURL: "1", pages: ["1", "58"] }} />
 
 
         </div>
