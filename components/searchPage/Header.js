@@ -281,10 +281,10 @@ export default function Header({ keyword, pageNumber, filteredObjsArrayProps }) 
                 <div className='flex items-center flex-wrap justify-start space-x-1 md:space-x-2 mb-2 md:mb-0 mr-1'>
                     {Final_filteredArray.map(item => {
                         return (
-                            <div key={item} onClick={() => { removefilter(item) }} className=' text-xs md:text-sm hover:bg-button_hover cursor-pointer bg-button rounded-lg px-2 py-1 flex items-center space-x-1'>
-                                <p className=' text-white font-inter ' >{item}</p>
-                                <XCircleIcon className='h-4 md:h-6 text-white' />
-                            </div>
+                            <div key={item} onClick={() => { removefilter(item) }} className='mr-1 md:mr-2 text-xs md:text-sm hover:bg-red-800 cursor-pointer bg-red-500 rounded-lg px-2 py-1 flex items-center space-x-1 '>
+                            <p className=' text-white font-inter ' >{item}</p>
+                            <XCircleIcon className='h-4 md:h-6 text-white' />
+                        </div>
                         )
                     })}
                 </div>
