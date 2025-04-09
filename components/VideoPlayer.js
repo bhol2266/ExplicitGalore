@@ -104,7 +104,9 @@ const VideoPlayer = ({ video_details, Qualitys, videolink_qualities_screenshots,
 
     const download = () => {
 
+        // router.push(VideoSrc)
         router.push("/membership")
+
 
     }
 
