@@ -7,30 +7,37 @@ const plans = [
     {
         duration: "1 month",
         offer: "",
-        price: "$2.99",
-        type: "month"
+        price: "$2.99 (INR 251)",
+        amount: "251",
+        type: "month",
+        planCode: "1M"
     },
     {
         duration: "3 months",
         offer: "20% OFF",
-        price: "$4.99",
-        type: "month"
+        price: "$4.99 (INR 420)",
+        amount: "420",
+        type: "month",
+        planCode: "3M"
     },
     {
         duration: "12 months",
         offer: "40% OFF",
-        price: "$9.99",
-        type: "month"
+        price: "$9.99 (INR 840)",
+        type: "month",
+        amount: "840",
+        planCode: "12M"
     },
 
     {
         duration: "Lifetime",
         offer: "USE FOREVER",
-        price: "$19.99",
-        type: "once"
+        price: "$19.99 (INR 1680)",
+        amount: "1680",
+        type: "once",
+        planCode: "LIFETIME"
     },
 ]
-
 
 
 
