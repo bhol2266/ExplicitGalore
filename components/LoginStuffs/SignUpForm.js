@@ -54,19 +54,10 @@ export const SignUpForm = () => {
             authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${process.env.GOOGLE_CLIENT_ID}&redirect_uri=${REDIRECT_URI1}&scope=${scope}`;
 
         }
-        if (currentHost.includes("chutlunds.com")) {
-            const REDIRECT_URI2 = "https://www.chutlunds.com/api/auth/chutlunds/callback"
-            authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${process.env.GOOGLE_CLIENT_ID}&redirect_uri=${REDIRECT_URI2}&scope=${scope}`;
+      
 
-        }
-        if (currentHost.includes("chutlunds2.com")) {
-            const REDIRECT_URI3 = "https://www.chutlunds2.com/api/auth/chutlunds2/callback"
-            authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${process.env.GOOGLE_CLIENT_ID}&redirect_uri=${REDIRECT_URI3}&scope=${scope}`;
-
-        }
-
-        if (currentHost.includes("xhamster.gg")) {
-            const REDIRECT_URI5 = "https://www.xhamster.gg/api/auth/xhamster/callback"
+        if (currentHost.includes("explicitgalore.com")) {
+            const REDIRECT_URI5 = "https://www.explicitgalore.com/api/auth/explicitgalore/callback"
             authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${process.env.GOOGLE_CLIENT_ID}&redirect_uri=${REDIRECT_URI5}&scope=${scope}`;
 
         }
