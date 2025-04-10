@@ -105,7 +105,7 @@ const Membership = () => {
     };
 
 
-   
+
 
     const { paymentModalVisible, setpaymentModalVisible, selectedPlan, setSelectedPlan } = useContext(videosContext);
     return (
@@ -138,7 +138,7 @@ const Membership = () => {
                                 <span className={`font-arial font-semibold text-xs lg:text-sm ml-2 bg-red-500 text-white rounded-md px-1 py-0.5 ${plan.offer.length === 0 ? "hidden" : ""}`}>{plan.offer}</span>
                             </div>
                             <div>
-                            <span className="font-bold font-inter text-md lg:text-lg">{plan.price}</span>
+                                <span className="font-bold font-inter text-md lg:text-lg">{plan.price}</span>
 
                             </div>
                         </div>
