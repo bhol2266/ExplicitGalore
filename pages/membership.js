@@ -104,6 +104,9 @@ const Membership = () => {
         setSelectedPlan(plan);
     };
 
+  const activateMembership = () => {
+        router.push(`/activateMembership`);
+    };
 
 
 
@@ -149,6 +152,16 @@ const Membership = () => {
 
                 <button onClick={(() => setpaymentModalVisible(true))} className=' bg-theme text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block  hover:scale-105 transition-all mt-4 lg:mt-6'>Get Access now!</button>
 
+     <button
+                    onClick={() => activateMembership()}
+                    className="text-white px-6 lg:px-8  rounded-2xl font-poppins text-sm lg:text-lg mx-auto block 
+             hover:scale-105 transition-transform duration-200 ease-in-out mt-4 lg:mt-6 bg-theme py-2"
+                >
+                    Already a member?{" "}
+                    <span className="underline underline-offset-4  transition-all F">
+                        activate now
+                    </span>
+                </button>
 
                 <div className='-z-10 absolute bottom-0 lg:fixed p-4 lg:p-6 gap-4 lg:gap-6 left-0 grid grid-cols-2 lg:grid-cols-5 bg-black bg-opacity-70  w-full'>
 
