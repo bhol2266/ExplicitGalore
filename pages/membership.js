@@ -37,33 +37,33 @@ const plans = [
     {
         duration: "1 month",
         offer: "",
-        price: "$2.99 (INR 251)",
-        amount: "251",
+        price: "$2.99",
+        amount: "2.99",
         type: "month",
         planCode: "1M"
     },
     {
         duration: "3 months",
         offer: "20% OFF",
-        price: "$4.99 (INR 420)",
-        amount: "420",
+        price: "$4.99",
+        amount: "4.99",
         type: "month",
         planCode: "3M"
     },
     {
         duration: "12 months",
         offer: "40% OFF",
-        price: "$9.99 (INR 840)",
+        price: "$9.99",
         type: "month",
-        amount: "840",
+        amount: "9.99",
         planCode: "12M"
     },
 
     {
         duration: "Lifetime",
         offer: "USE FOREVER",
-        price: "$19.99 (INR 1680)",
-        amount: "1680",
+        price: "$19.99",
+        amount: "19.99",
         type: "once",
         planCode: "LIFETIME"
     },
@@ -104,8 +104,19 @@ const Membership = () => {
         setSelectedPlan(plan);
     };
 
-  const activateMembership = () => {
+    const activateMembership = () => {
         router.push(`/activateMembership`);
+    };
+
+        const getAccessNowOnClick = () => {
+
+
+        if (typeof window !== 'undefined') {
+            const domain = window.location.origin; // e.g., https://example.com
+
+            router.push(`https://www.ukdevelopers.org/membership?planAmount=${selectedPlan.amount}&planDuration=${selectedPlan.duration}&planCode=${selectedPlan.planCode}&source=${domain}`);
+            // router.push(`http://localhost:3000/membership?planAmount=${selectedPlan.amount}&planDuration=${selectedPlan.duration}&planCode=${selectedPlan.planCode}&source=${"Chutlunds"}`);
+        }
     };
 
 
@@ -150,9 +161,9 @@ const Membership = () => {
                 <div className="text-white text-[8px] lg:text-[10px] font-poppins text-center bg-black bg-opacity-50 px-2 py-0.5 w-fit mx-auto block rounded">This site is protected by reCAPTCHA and the Google <a className='underline' href="https://policies.google.com/privacy">Privacy Policy</a> and <a className='underline' href="https://policies.google.com/terms">Terms of Service</a> apply.</div>
 
 
-                <button onClick={(() => setpaymentModalVisible(true))} className=' bg-theme text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block  hover:scale-105 transition-all mt-4 lg:mt-6'>Get Access now!</button>
+                <button onClick={(() => getAccessNowOnClick())} className=' bg-theme text-white lg:px-8 lg:py-4 px-6 py-3 rounded-2xl font-poppins text-[14px] lg:text-[20px] mx-auto block  hover:scale-105 transition-all mt-4 lg:mt-6'>Get Access now!</button>
 
-     <button
+                <button
                     onClick={() => activateMembership()}
                     className="text-white px-6 lg:px-8  rounded-2xl font-poppins text-sm lg:text-lg mx-auto block 
              hover:scale-105 transition-transform duration-200 ease-in-out mt-4 lg:mt-6 bg-theme py-2"
