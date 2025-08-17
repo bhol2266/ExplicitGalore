@@ -437,7 +437,7 @@ function Navbar() {
 
                     <div className='relative flex items-center space-x-1 md:space-x-3  ml-2 ' >
 
-                        <Link className="absolute flex items-center" href='/'>
+                        <Link className="absolute flex items-center -z-10" href='/'>
                             <img src='/logo.png' alt="logo" className='h-[100px] mt-[40px]' />
                             <span className="text-red-500 font-abril font-semibold text-[25px] ">ExplicitGalore.com</span>
 
@@ -562,7 +562,7 @@ function Navbar() {
 
 
 
-                <div className='w-full  text-white items-center justify-around   flex  px-1 shadow-lg'>
+                <div className='w-full  text-white items-center justify-around   flex  px-1 shadow-lg '>
                     {navigation.map(item => {
                         const isActive = currentPath === item.href;
 
